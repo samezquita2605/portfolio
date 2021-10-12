@@ -46,6 +46,7 @@ h1 {
   font-family: Kaushan Script, sans-serif;
   font-size: 80px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 h2 {
@@ -89,12 +90,38 @@ a:focus {
 .about-container {
   display: flex;
 }
+
 .photo-container {
   border: 1px solid var(--secondary-color);
   width: auto;
   border-radius: 50%;
   background: var(--background);
   box-shadow: var(--box-shadow);
+  margin-right: 25px;
+}
+
+.about-desc {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  justify-content: center;
+}
+
+.desc1 {
+  width: 40%;
+  text-align: justify;
+  background: rgb(0 0 0 / 50%);
+  color: var(--on-primary);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.resume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  margin-top: 40px;
 }
 
 /* Skills Section */
@@ -269,4 +296,14 @@ input:checked + .slider::before {
 .fas {
   font-size: 30px;
   margin-right: 5px;
+}
+
+.far {
+  font-size: 100px;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.far:hover {
+  color: var(--on-background);
 }
