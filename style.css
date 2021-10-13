@@ -307,3 +307,147 @@ input:checked + .slider::before {
 .far:hover {
   color: var(--on-background);
 }
+
+/* Media query: large Smartphone */
+@media screen and (max-width: 700px) {
+  section {
+    min-height: 80vh;
+  }
+  /* Nav */
+  nav {
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    position: fixed;
+    font-family: Oswald, sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 15px;
+    background: rgb(255 255 255 / 50%);
+  }
+  a {
+    margin-right: 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 10px;
+  }
+  /* About */
+  .about-container {
+    width: 600px;
+  }
+  .about-desc {
+    display: flex;
+    flex-direction: column;
+  }
+  .photo-container {
+    height: 200px;
+    width: 200px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .desc1 {
+    padding: 20px;
+  }
+  p {
+    line-height: 15px;
+    font-size: 10px;
+  }
+  .resume {
+    font-size: medium;
+    margin-top: 20px;
+  }
+  /* Skills */
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  }
+  .image-container {
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .skills-photo {
+    height: 140px;
+    width: 140px;
+  }
+  /* Projects */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  button {
+    min-width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: 2px solid var(--primary-color);
+    font-size: 15px;
+    outline: none;
+  }
+  .primary {
+    background: var(--primary-color);
+    color: var(--on-primary);
+    margin-bottom: 10px;
+  }
+
+  .secondary {
+    border: 2px solid var(--secondary-color);
+    margin-bottom: 10px;
+  }
+  /* Contact */
+  [class*="fab fa-"] {
+    font-size: 50px;
+    margin-right: 10px;
+  }
+
+  .far {
+    font-size: 50px;
+    margin-right: 10px;
+  }
+  /* Dark Mode Toggle */
+  .fas {
+    font-size: 20px;
+    margin-right: 0px;
+  }
+  .theme-switch-wrapper {
+    align-items: center;
+    z-index: 100;
+    position: absolute;
+    right: 25px;
+    top: 15px;
+  }
+
+  .theme-switch-wrapper span {
+    margin-right: 4px;
+    font-size: 1rem;
+  }
+
+  .toggle-text {
+    position: relative;
+    top: -4px;
+    right: 5px;
+    color: var(--on-background);
+  }
+
+  .theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+}

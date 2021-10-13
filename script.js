@@ -6,7 +6,6 @@ const img2 = document.getElementById('img2');
 const img3 = document.getElementById('img3');
 const img4 = document.getElementById('img4');
 const textBox = document.getElementById('text-box');
-const desc1Box = document.getElementById('desc1');
 
 //Dark or light images
 function imageMode (color) {
@@ -18,7 +17,6 @@ function imageMode (color) {
 
 function toggleDarkLightMode(isDark) {
     nav.style.backgroundColor = isDark ? 'rgb (0 0 0 / 50%)' : 'rgb(255 255 255 / 50%)';
-    desc1Box.style.backgroundColor = isDark ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 50%)';
     textBox.style.backgroundColor = isDark ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 50%)';
     toggleIcon.children[0].textContent = isDark ? 'Dark Mode' : 'Light Mode';
     isDark ? toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon'):
