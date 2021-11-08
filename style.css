@@ -338,9 +338,16 @@ input:checked + .slider::before {
   }
   .nav-item.open {
     height: auto;
-    padding: 10px;
     display: block;
   }
+  a {
+    border-bottom: none;
+  }
+  a:hover,
+  a:focus {
+    border-bottom: none;
+  }
+
   h1 {
     font-size: 30px;
   }
