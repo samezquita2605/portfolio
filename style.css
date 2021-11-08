@@ -315,22 +315,31 @@ input:checked + .slider::before {
   }
   /* Nav */
   nav {
-    display: flex;
-    flex-direction: column;
-    z-index: 10;
-    position: fixed;
-    font-family: Oswald, sans-serif;
+    width: 100%;
+    padding: 0;
     font-size: 15px;
-    letter-spacing: 2px;
-    padding: 15px;
-    background: rgb(255 255 255 / 50%);
   }
-  a {
-    margin-right: 10px;
-    color: var(--primary-color);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    font-weight: bold;
+  .burger-nav {
+    display: block;
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    background: url(img/icons-menu.png) no-repeat 3% center;
+    background-color: #82afaf;
+    cursor: pointer;
+  }
+  .nav-item {
+    padding: 10px;
+    border-bottom: 1px solid #404040;
+    display: none;
+    margin: 0;
+    background: #505050;
+    height: 0;
+  }
+  .nav-item.open {
+    height: auto;
+    padding: 10px;
+    display: block;
   }
   h1 {
     font-size: 30px;
