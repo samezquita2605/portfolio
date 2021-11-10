@@ -333,7 +333,7 @@ input:checked + .slider::before {
     border-bottom: 1px solid #404040;
     display: none;
     margin: 0;
-    background: #505050;
+    background: rgb(66, 66, 66, 0.8);
     height: 0;
   }
   .nav-item.open {
